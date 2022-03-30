@@ -1,0 +1,10 @@
+Created Dynamic Sql Database schema as medi using MySql
+Following Tables are Dynamically Created
+Tables:-
+admin
+cart
+card_id_seq
+login
+login_id_sequence
+medical_products
+product_id_seq
