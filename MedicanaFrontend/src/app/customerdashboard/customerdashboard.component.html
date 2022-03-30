@@ -1,0 +1,54 @@
+<div class="bge" style="width: 100%; height: 695px;">
+<p> WELCOME {{name|uppercase}} </p>
+<br>
+<button (click)="onclick()" class="btn btn-info" id="two">VIEW PRODUCTS</button>
+
+<button (click)="updateprofile()" class="btn btn-info" id="two">UPDATE PROFILE</button>
+
+<button (click)="mycart()" class="btn btn-info" id="two">MY CART</button>
+
+<button (click)="search()" class="btn btn-info" id="two">SEARCH</button>
+
+<button (click)="CategoryComponent()" class="btn btn-info" id="two" >PRODUCT BY CATERGORY</button>
+
+<button (click)="gotohome()"  class="btn btn-danger" id="one" >LOGOUT</button>
+
+<br><br>
+<p *ngIf="ProductList.length === 0" class="" >
+    LOOKS LIKE U HAVE NOT SHOPPED YET
+ </p>
+    <!-- {{ProductList}} -->
+ <form *ngIf="ProductList.length>0">
+     <p>
+        {{name|uppercase}} YOUR  RECENTLY PURCHASED PRODUCTS ARE
+     </p>
+<table class="table table-striped table-bordered">
+<thead>
+            <tr>
+                <th>CART ID</th>
+                <th >PRODUCT ID</th>
+                <th>PRODUCT NAME</th> 
+                <th>PRODUCT PRICE</th>
+                <th>PRODUCT TYPE</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <meta name="viewport"
+            content="width=device-width,
+            initial-scale=0.4">
+              <tr *ngFor="let br of ProductList">   
+                <td>{{br.id}}</td>
+                <td>{{br.pid}}</td>           
+                <td> {{br.pname}} </td>
+                <td> {{br.price | currency:'INR'}} </td>  
+                <td>{{br.ptype}}</td>
+                
+            </tr>
+        </tbody>
+        <br>
+    </table>
+    
+    </form>
+</div>
+

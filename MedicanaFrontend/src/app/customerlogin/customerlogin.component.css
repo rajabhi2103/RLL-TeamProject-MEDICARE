@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box
+}
+ 
+/* Add padding to containers */
+ 
+.container {
+    padding: 5px;
+    background-color: #8ba8a3a8;
+  
+    border-radius: 50px;
+}
+ 
+/* Full-width input fields */
+ 
+input[type=text],
+input[type=password] {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #820000;
+    border-radius: 50px;
+    width: 80%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #ffffff;
+    position: relative;
+   
+    left: 10%;
+}
+ 
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+ 
+/* Overwrite default styles of hr */
+ 
+hr {
+    border: 2px solid #000000;
+    margin-bottom: 25px;
+}
+ 
+/* Set a style for the submit/register button */
+ 
+.registerbtn {
+    background-color: #04AA6D;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #820000;
+    border-radius: 50px;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+
+}
+ 
+.registerbtn:hover {
+    opacity: 1;
+}
+ 
+/* Add a blue text color to links */
+ 
+a {
+    color: rgb(15, 76, 138);
+}
+ 
+/* Set a grey background color and center the text of the "sign in" section */
+ 
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+form div #msg{
+    color: red;
+    text-align: center;
+}
+.alert div {
+    background-color: #fed3d3;
+    color: #820000;
+    
+  }
+  p{
+    
+    
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+   
+}

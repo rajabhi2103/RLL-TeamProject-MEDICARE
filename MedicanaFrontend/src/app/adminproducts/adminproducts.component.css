@@ -1,0 +1,25 @@
+table{
+    margin-left: 16%;
+    text-align: center;
+    width: auto;
+   
+}
+
+.toggle
+{
+
+ font-size: 20px;
+}
+
+h1{
+     color: green;
+     font-size: 30px;
+ }
+ form{
+     padding-top: 0%;
+ }
+ .bge{
+    background: url("/assets/view.jpeg");
+    background-size: cover;
+    
+  }

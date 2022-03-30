@@ -1,0 +1,11 @@
+table{
+    margin-left: 30%;
+    text-align: center;
+    padding-left: 100%;
+    width: auto;
+}
+.bge{
+    background: url("/assets/view.jpeg");
+    background-size: cover;
+    
+  }

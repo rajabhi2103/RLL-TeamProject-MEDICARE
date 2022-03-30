@@ -1,0 +1,19 @@
+.middle{
+    margin-left: 40%;
+}
+
+.sum{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+
+table{
+    text-align: center;
+}
+
+.bge{
+    background: url("/assets/cart.jpeg");
+    background-size: cover;
+    
+  }

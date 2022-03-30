@@ -1,0 +1,36 @@
+.bge{
+    background: url("/assets/view.jpeg");
+    background-size: cover;
+    
+  }
+  input[type=text],
+input[type=number] {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #820000;
+    border-radius: 50px;
+    width: 50%;
+    padding: 12px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #ffffff;
+    position: relative;
+    padding-right: 20%;
+   
+   
+    left: 10%;
+}
+input[type=text]:focus,
+input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+ 
+.container {
+    padding: 90px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #8ba8a3a8;
+    width: 50%;
+  border-radius: 1000px;
+}

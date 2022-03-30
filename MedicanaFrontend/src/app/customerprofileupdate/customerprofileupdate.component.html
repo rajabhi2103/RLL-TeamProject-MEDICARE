@@ -1,0 +1,23 @@
+
+<button (click)="backtodashboard()"  class="btn btn-primary"id="one" >&lAarr;</button>
+<form  >
+    <div class="container">
+        <h1>Customer Profile Update! </h1>
+        <label for="email"><b>Name  </b></label>
+        <input type="text" placeholder="Enter Name"  name="name" #un="ngModel"  required  [(ngModel)]="customer.name"/>
+        <button class="btn btn-danger">EDIT THIS..</button>
+        <button type="submit" class="btn btn-success"  (click)="UpdateProfile2(customer.name)"> SAVE CHANGES</button>
+        <br>
+        <br>
+        <label for="psw"><b>Password  </b></label> 
+        <input type="password" placeholder="Enter Password" name="password" #up="ngModel"  required  [(ngModel)]="customer.password"/>
+        <button class="btn btn-danger" >EDIT THIS..</button>
+        <button type="submit" class="btn btn-success"  (click)="UpdateProfile(customer.password)"> SAVE CHANGES</button>
+<br>
+<br>
+        <label for="psw"><b>Mobile No  </b></label>
+        <input type="text" placeholder="Enter Mobile number" name="moob" #um="ngModel"required  [(ngModel)]="customer.contact"/>
+        <button class="btn btn-danger" >EDIT THIS..</button>
+        <button type="submit" class="btn btn-success"  (click)="UpdateProfile1(customer.contact)"> SAVE CHANGES</button>
+    </div>
+</form>

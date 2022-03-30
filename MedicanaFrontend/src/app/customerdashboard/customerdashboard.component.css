@@ -1,0 +1,46 @@
+p{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    font-style: normal;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 2%;
+}
+div.relative {
+    position: relative;
+    
+    
+  }
+
+
+#two{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+table{
+    text-align: center;
+    width: auto;
+    margin-left: 30%;
+    margin-top: 2%;
+    
+}
+.bge{
+    background: url("/assets/custdas.jpeg");
+    background-size: cover;
+    
+  }
+  div button{
+    margin-left: 20px;
+    text-decoration:none;
+    font-size: 30px;
+    background-color: #9d8cda;   
+color:#01121c;
+padding:5px 10px 5px 10px;
+border:1px;
+border-radius:5px;
+}
+div button:hover{
+  background-color:#e33719;
+color:white;
+transition:0.5s ease;
+}

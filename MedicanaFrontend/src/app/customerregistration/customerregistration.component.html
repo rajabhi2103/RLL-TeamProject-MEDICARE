@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=0.4">
+    <div class="bge" style="width: 100%; height: 695px;">
+    <form  #regForm="ngForm"  >
+        <div class="container">
+            <center><h1><b><i><u>Customer Registeration Form</u></i></b></h1></center>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+ 
+           <center> <label for="email"><h2><b><i>Name</i></b></h2></label></center>
+            <input #name="ngModel" type="text" placeholder="Enter Name"  name="name" #un="ngModel"  required  [(ngModel)]="car.name"/>
+            <div *ngIf="name.invalid && (name.dirty || name.touched)"
+        class="alert">
+            <div *ngIf="name.errors?.['required']">
+                <center><b>Name is required.</b></center>
+                        </div>
+                
+            </div>
+
+            <br>
+            
+        <center>        <label for="psw"><h2><i><b>Password</b></i></h2></label></center>
+            <input  #password="ngModel" type="password" placeholder="Enter Password" name="password" #up="ngModel"  required  [(ngModel)]="car.password"/>
+            <div *ngIf="password.invalid && (password.dirty || password.touched)"
+        class="alert">
+            
+            <div *ngIf="password.errors?.['required']">
+                <center><b>Password is required.</b></center>
+                        </div>
+                
+            </div>
+
+            <center><label for="psw"><h2><b><i>Mobile No</i></b></h2></label></center>
+            <input  #number="ngModel" type="text" placeholder="Enter Mobile number" name="moob" #um="ngModel" minlength="10" maxlength="10" required  [(ngModel)]="car.contact"/>
+            <div *ngIf="number.invalid && (number.dirty || number.touched)"
+        class="alert">
+            <div *ngIf="number.errors?.['required']">
+             <center> <b>  Number is required.</b></center>
+                        </div>
+            </div>
+            
+
+           <center> <label for="add"><h2><b><i>Address</i>
+           </b></h2></label></center>
+            <input  #address="ngModel" type="text" placeholder="Enter your Address" name="add" [(ngModel)]="car.address" />
+            <div *ngIf="address.invalid && (address.dirty || address.touched)"
+        class="alert">
+            <div *ngIf="address.errors?.['required']">
+              <center> <b> Address is required.</b></center>
+                        </div>
+                
+            </div>
+
+            <hr>
+ 
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <center><button type="submit" class="registerbtn" [routerLink]="['/home']" (click)="register()"> <b><i>Register</i></b></button></center>
+        
+ 
+        <div class="container signin">
+            <p>Already have an account? <a href="#" [routerLink]="['/home']">Sign in</a>.</p>
+        </div>
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>

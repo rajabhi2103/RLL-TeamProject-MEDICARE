@@ -1,0 +1,60 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<form  #regForm="ngForm" (ngSubmit)="login()" name="myForm" >
+    <div class="container" >
+       <center> <h1><b><i><u>Customer Login</u></i></b></h1></center>
+        
+      
+
+        
+        
+        <center><label for="email"><h1><b><i>ID</i></b></h1></label></center>
+        <input #name="ngModel" id="name" type="text" placeholder="Enter Id" name="name" #ue="ngModel" ng-model="myName" required [(ngModel)]="adminLogin.id" minlength="3"/>
+        <!-- <span ng-show="myForm.myName.$touched && myForm.myName.$invalid">The name is required.</span> -->
+
+        <!-- <input type="text" id="name" name="name" class="form-control"
+      required minlength="4" appForbiddenName="bob"
+      [(ngModel)]="hero.name" #name="ngModel"> -->
+            
+    <div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert">
+
+               <center> <div *ngIf="name.errors?.['required']">
+       <b>Customer id is required.</b> 
+                </div></center>
+        <!-- <div *ngIf="name.errors?.['minlength']">
+        Name must be at least 4 characters long.
+        </div> -->
+    </div>
+
+
+
+
+
+
+        <center><label for="psw"><h1><b><i>Password</i></b></h1></label></center>
+        <input #password="ngModel" id="password" type="password" placeholder="Enter Password" name="password" #up="ngModel"  required  [(ngModel)]="adminLogin.password"/>
+        <div *ngIf="password.invalid && (password.dirty || password.touched)"
+        class="alert">
+    
+                    <center><div *ngIf="password.errors?.['required']">
+            <b>Password is required.</b>
+                    </div></center>
+            <div *ngIf="password.errors?.['minlength']">
+            Password must be at least 4 characters long.
+            </div>
+        </div>
+        <strong><p id="msg">{{message}}</p></strong>
+        
+
+
+       
+
+        <p>By Loging in you accept our  <a href="#">Terms & Privacy</a>.</p>
+       <center> <button type="submit" class="registerbtn"><b><i>Login</i></b></button></center>
+        
+    </div>
+
+   
+</form>
+
+

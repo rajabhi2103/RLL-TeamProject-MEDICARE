@@ -1,0 +1,44 @@
+<div class="bge" style="width: 100%; height: 695px;">
+  <br><br>
+<button (click)="adminhome()"  class="btn btn-primary" id="one" ><b><i>BACK TO ADMIN</i></b> </button>
+<br>
+
+
+<div class="container">
+  
+<form>
+    <div class="form-group">
+      <label for="pname"><b><i>PRODUCT NAME</i></b></label>
+      <input type="text"  class="form-control" aria-describedby="emailHelp" placeholder="Enter name" name="name" id="name" required [(ngModel)]="Product.pname"  maxlength="10">
+    </div>
+    <div class="form-group">
+        <label for="pname"></label><b><i>PRODUCT PRICE</i></b>
+        <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter Price" name="name" id="name" required [(ngModel)]="Product.price" min="0" max="50">
+      </div>
+      <div class="form-group">
+        <label for="pname"><b><i>PRODUCT QNTY </i></b></label>
+        <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter Quantity" name="name" id="name" required [(ngModel)]="Product.pqty" min="0" max="50">
+      </div>
+      <div class="form-group">
+        <label for="pname"><b><i>PRODUCT STATUS</i></b></label>
+        <input type="text" class="form-control" aria-describedby="Help" placeholder="Enter A or N" name="name" id="name" required [(ngModel)]="Product.status">
+        <br><small id="Help" class="form-text text-muted"><b><i>A-Available N-Non-Available</i></b></small>
+      </div>
+      <div class="form-group">
+        <label for="pname"><b><i>PRODUCT TYPE</i></b></label> <br>
+        <select name="cars" id="cars" [(ngModel)]="Product.ptype">
+          <option value="Antibiotic">Antibiotic</option>
+          <option value="Syrup">Syrup</option>
+          <option value="Insulin">Insulin</option>
+          
+        </select>
+        <!-- <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Type" name="name" id="name" required [(ngModel)]="Product.ptype" maxlength="10"> -->
+      </div>
+     
+<br>
+    <center><button type="submit" class="btn btn-success" (click)="onclick()" >SUBMIT</button>
+      <button (click)="adminhome()"  class="btn btn-danger"id="one" style="margin-left: 20px;">CANCEL</button></center>
+  </form>
+<!-- Content here -->
+</div>
+</div>

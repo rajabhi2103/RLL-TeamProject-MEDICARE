@@ -1,0 +1,46 @@
+
+<body class="back">
+    <meta name="viewport"
+        content="width=device-width,
+        initial-scale=0.4">
+<img src="https://cdn.dribbble.com/users/778626/screenshots/5064153/media/0de995395b8752c62935e6fd07a56337.gif" alt="" width="250px" height="250px">
+
+
+<p>PAYMENT CONFIRM.. YOUR ORDER DETAILS HAS BEEN SENT TO PHONE NUMBER</p>
+
+<form>
+<table class="table table-striped table-bordered" style="text-align: center;">
+    
+    <thead>
+        <tr>
+          
+            <th>PRODUCT NAME</th> 
+            <th>PRODUCT PRICE</th>
+            <th>PRODUCT TYPE</th>
+        </tr>
+         
+            
+    </thead>
+  
+    <tbody>
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=0.4">
+          <tr *ngFor="let br of product">              
+           
+            <td> {{br.pname}} </td>
+            <td> {{br.price | currency:'INR' }} </td>  
+            <td>{{br.ptype}}</td>           
+        </tr> 
+    </tbody>
+    <br>
+</table>
+</form>
+
+
+
+<h1 class="sum">TOTAL PRICE PAID : {{sum}} Rupee Only/-</h1>
+<br>
+<button (click)="backtodashboard()"  class="btn btn-dark" id="one">BACK TO PRODUCTS</button>
+<button (click)="printPage()"  class="btn btn-danger" id="two" >PRINT</button>
+</body>
